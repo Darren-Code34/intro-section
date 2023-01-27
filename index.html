@@ -19,14 +19,31 @@
 </head>
 <body>
   <header class="header">
-    <img src="./images/logo.svg" alt="logo">
-    <img src="./images/icon-menu.svg" alt="menu" class="hamburger-menu">
-    <img src="./images/icon-close-menu.svg" alt="close menu" class="close-menu">
+    <div class="header-nav">
+      <img src="./images/logo.svg" alt="logo">
+      <img src="./images/icon-menu.svg" alt="menu" class="hamburger-menu">
+    </div>
     
     <div class="menu">
+      <img src="./images/icon-close-menu.svg" alt="close menu" class="close-menu">
       <ul class="menu-list">
-        <li>Features</li>
-        <li>Company</li>
+        <li class="features">
+          <a href="#" class="features-link">Features</a> <img src="./images/icon-arrow-down.svg" alt="icon arrow down" class="icon-arrow-down features-icon-arrow-down"> <img src="./images/icon-arrow-up.svg" alt="icon arrow up" class="icon-arrow-up features-icon-arrow-up">
+          <ul class="features-list sous-menu">
+            <li><img src="./images/icon-todo.svg" alt="todo icon" class="icon-list"> Todo List</li>
+            <li><img src="./images/icon-calendar.svg" alt="calendar icon" class="icon-list"> Calendar</li>
+            <li><img src="./images/icon-reminders.svg" alt="reminder icon" class="icon-list"> Reminders</li>
+            <li><img src="./images/icon-planning.svg" alt="planning" class="icon-list"> Planning</li>
+          </ul>
+        </li>
+        <li class="company">
+          <a href="#" class="company-link">Company</a><img src="./images/icon-arrow-down.svg" alt="icon arrow down" class="icon-arrow-down company-icon-arrow-down"> <img src="./images/icon-arrow-up.svg" alt="icon arrow up" class="icon-arrow-up company-icon-arrow-up">
+          <ul class="company-list sous-menu">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
         <li>Careers</li>
         <li>About</li>
       </ul>
@@ -65,7 +82,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Darren MIBISSA </a>.
+    Coded by <a href="https://github.com/Darren-Code34/intro-section.git">Darren MIBISSA</a>.
   </div>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+/*mobil design*/
 *, ::after, ::before{
     box-sizing: border-box;
     margin: 0;
@@ -7,29 +9,101 @@
 body{
     font-size: 18px;
     font-family: "Epilogue", sans-serif;
+    z-index: 1;
 }
 
-.header{
+.header-nav{
     padding: 20px 15px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.hamburger-menu{
-
-}
-
 .close-menu{
-    display: none;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 40px;
 }
 
 .menu{
+    position: absolute;
+    width: 70%;
+    background: hsl(0, 0%, 98%);
     display: none;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 150vh;
+    padding: 20px;
+}
+
+.menu-list{
+    color: hsl(0, 0%, 41%);
+}
+
+a{
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    margin-right: 10px;
+}
+
+.icon-arrow-down{
+    position: relative;
+}
+
+.icon-arrow-up{
+    display: none;
+    position: relative;
+}
+
+.menu li{
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+
+.sous-menu{
+    margin-top: 30px;
+    list-style-type: none;
+    position: relative;
+    left: 40px;
+    display: none;
+}
+
+.icon-list{
+    margin-right: 10px;
+}
+
+.login{
+    border: none;
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.register{
+    border: solid 2px hsl(0, 0%, 41%);
+    border-radius: 10px;
+    padding: 10px 70px;
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    display: block;
+    font-weight: 500;
 }
 
 .container{
     width: 100%;
+    z-index: 1;
 }
 
 .mobil-banner{
@@ -87,4 +161,8 @@ body{
     width: 50px;
     position: relative;
     top: 5px;
+}
+
+.attribution{
+    margin-bottom: 50px;
 }
